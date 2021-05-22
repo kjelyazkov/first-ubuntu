@@ -9,6 +9,8 @@ class TestController extends Controller
     public function index()
     {
         $users = ['hi', 'hi two'];
-        return view('welcome', compact('users'));
+
+        $something = 'Im a new person';
+        return view('welcome', compact('users', 'something'));
     }
 }
