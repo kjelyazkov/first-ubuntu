@@ -18,4 +18,11 @@ class TestController extends Controller
         
         return view('welcome', compact('users', 'something'));
     }
+
+    public function new()
+    {
+        $newMe = 'from new method';
+
+        return view('welcome', compact('newMe'));
+    }
 }
